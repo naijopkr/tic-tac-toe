@@ -1,4 +1,10 @@
-from functions import *
+from functions import ( 
+    choose_name, 
+    enter_board_size, 
+    enter_position, 
+    clear, 
+    check_win
+)
 from math import ceil
 
 players = (choose_name(1), choose_name(2))

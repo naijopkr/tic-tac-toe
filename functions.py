@@ -56,7 +56,7 @@ def check_win(positions_taken, row_taken, col_taken):
         for index in range(len(positions_taken)):
             row = positions_taken[index]
             diagonal.add(row[index])
-            anti_diagonal.add(row[len(row) - 1 - index])
+            anti_diagonal.add(row[last_index - index])
         diagonal_win = len(diagonal) == 1 and min(diagonal) != 0
         anti_diagonal_win = len(anti_diagonal) == 1 and min(anti_diagonal) != 0
 
